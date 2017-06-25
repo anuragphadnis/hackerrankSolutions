@@ -34,7 +34,9 @@ public class Encryption {
         //System.out.println(row);
         int col = (int) Math.ceil ( Math.sqrt( len ) );
         //System.out.println(col);
-         
+        if( row*col < len ) {
+            row++;
+        } 
         //////////////
         int k=0;
         char[][] sol = new char[row][col];
