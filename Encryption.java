@@ -40,8 +40,8 @@ public class Encryption {
         //////////////
         int k=0;
         char[][] sol = new char[row][col];
-        for(int i=0;i<row;i++) {
-            for(j=0;j<col;j++) {
+        for(int i=0;i<row&&k<len;i++) {
+            for(j=0;j<col&&k<len;j++) {
                 sol[i][j]=strNewChars[k++];
  //               System.out.print(sol[i][j]);
             }
